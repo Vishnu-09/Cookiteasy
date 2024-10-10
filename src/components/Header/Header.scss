@@ -1,0 +1,118 @@
+.navbar {
+    box-shadow: rgba(230, 229, 229, 0.16) 0px 1px 4px;
+    height: 70px; /* Increased height for a larger navbar */
+    position: relative;
+    z-index: 999;
+    transition: all 0.3s;
+  
+    .navbar-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .brand-and-toggler {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+  
+      .navbar-links {
+        display: flex;
+        align-items: center;
+        margin-right: auto; /* Adjust spacing as needed */
+      }
+  
+      .navbar-brand {
+        font-size: 26px; /* Increased font size */
+      }
+  
+      .navbar-brand-text {
+        margin-left: 10px; /* Adjusted margin */
+        font-size: 24px; /* Increased font size */
+      }
+  
+      .nav-link {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px; /* Adjust spacing between links */
+        font-size: 20px; /* Increased font size */
+        &:hover {
+          color: lightgray;
+        }
+      }
+  
+      .navbar-btns {
+        display: flex;
+        align-items: center;
+  
+        .navbar-show-btn {
+          font-size: 24px; /* Increased icon size */
+        }
+      }
+    }
+  }
+  
+  .scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .header {
+    .header-content {
+      height: 400px;
+      background: linear-gradient(rgba(255, 251, 251, 0.6), rgba(125, 125, 125, 0.7)),
+        url("../../assets/images/header_image.jpg") center/cover no-repeat;
+    }
+    .header-title {
+      margin-top: 2.4rem;
+    }
+  }
+  
+  .search-form {
+    .form-control-input {
+      box-shadow: 0 4px 10px rgb(0 0 0 / 12%), 0 0 1px rgb(0 0 0 / 5%) inset;
+      min-width: 300px;
+      font-size: 16px;
+      height: 55px;
+      padding: 0px 3.2rem;
+      border-radius: 2.8rem !important;
+      margin-right: 1.2rem;
+    }
+    .form-submit-btn {
+      width: 55px;
+      height: 55px;
+      background-color: orange;
+      border-radius: 50%;
+      position: relative;
+      transition: all 0.3s;
+  
+      .btn-icon {
+        transition: all 0.3s;
+      }
+  
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        border: 1px solid white;
+        border-radius: 50%;
+      }
+  
+      &:hover {
+        .btn-icon {
+          transform: scale(0.9);
+          color: orange;
+        }
+        background: white;
+      }
+    }
+  }
+  
